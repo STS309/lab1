@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+main, .tests{
+    width: 50%;
+}
+
+main{
+    background-color: #fff;
+}
+
+.tests{
+    background-color: #000;
+}
