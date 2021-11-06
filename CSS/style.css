@@ -10,8 +10,36 @@ body{
 
 main, .tests{
     width: 50%;
+    height: 100vh;
 }
-
+main {
+    border: 1px solid;
+}
+h1 {
+    text-align: center;
+    margin: 5%;
+    padding: 0;
+}
+#random {
+    position: relative;
+    left: 10%;
+    width: 80%;
+}
+#randout {
+    position: relative;
+    border: 1px solid;
+    height: 200px;
+    width: 80%;
+    overflow: scroll;
+}
+ul {
+    list-style-type: none;
+    margin: 5px;
+}
+li {
+    display:inline-block;
+    width: 15px;
+}
 main{
     background-color: #fff;
 }
