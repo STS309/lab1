@@ -7,8 +7,8 @@ function random()
     x1=document.querySelector('#x1').value;
     n=document.querySelector('#n').value;
     document.querySelector('#randout').innerHTML = "";
-    if (String(x0).length!=String(x1).length ) {
-        alert('Числа неоднозначные');
+    if (String(x0).length!=String(x1).length || String(x0).length!=2*k|| String(x1).length!=2*k) {
+        alert('k= '+String(k)+" !");
         return 0;
     }
     for (i=0; i<n; i++) {
@@ -17,7 +17,6 @@ function random()
         document.querySelector('#randout').innerHTML+=" "+String(c1[i]);
         x0=x1;
         x1=c1[i];
-        console.log(C, k, c1[i])
     }  
     //9044
     return c1;

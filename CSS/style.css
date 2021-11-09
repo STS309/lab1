@@ -69,3 +69,6 @@ textarea {
     height: 32px;
     resize: none;
 }
+.testtext {
+    text-align: center;
+}
