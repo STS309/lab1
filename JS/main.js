@@ -7,8 +7,8 @@ function random()
     x1=document.querySelector('#x1').value;
     n=document.querySelector('#n').value;
     document.querySelector('#randout').innerHTML = "";
-    if (String(x0).length!=String(x1).length ) {
-        alert('Числа неоднозначные');
+    if (String(x0).length!=String(x1).length || String(x0).length!=2*k|| String(x1).length!=2*k) {
+        alert('k= '+String(k)+" !");
         return 0;
     }
     for (i=0; i<n; i++) {
@@ -17,7 +17,7 @@ function random()
         document.querySelector('#randout').innerHTML+=" "+String(c1[i]);
         x0=x1;
         x1=c1[i];
-        console.log(C, k, c1[i])
+        console.log(C, c1[i]);
     }  
     //9044
     return c1;
@@ -119,7 +119,11 @@ function indep_test_1(data)
     let w_data = (1 / N * w1_data - 1 / N * w2_data) / Math.sqrt((1 / N * w3_data - 1 / N * w4_data) * (Math.pow(N, 2) - 1) / 12);
     console.log(w_data);
     let otvet = 35 * (1 - Math.pow(w_data, 2)) / Math.sqrt(N);
+<<<<<<< HEAD
     document.querySelector(".test2").innerHTML = `p(e, i) < pmax \n ${w_data} < ${otvet}`
+=======
+    document.querySelector(".test2").innerHTML = otvet
+>>>>>>> sergeev
     return otvet
 }
 

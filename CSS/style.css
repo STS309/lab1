@@ -68,4 +68,10 @@ textarea {
     width: 90%;
     height: 32px;
     resize: none;
+<<<<<<< HEAD
+=======
+}
+.testtext {
+    text-align: center;
+>>>>>>> sergeev
 }
