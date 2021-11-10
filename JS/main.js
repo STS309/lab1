@@ -17,6 +17,7 @@ function random()
         document.querySelector('#randout').innerHTML+=" "+String(c1[i]);
         x0=x1;
         x1=c1[i];
+        console.log(C, c1[i]);
     }  
     //9044
     return c1;
