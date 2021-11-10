@@ -17,7 +17,7 @@
         </ul>   
         <ul>
             <li>x0</li>
-            <li><input type="number" id="x0" value="99214623"></li>
+            <li><input type="number" id="x0" value="99214621"></li>
         </ul>
         <ul>
             <li>x0</li>
@@ -25,10 +25,10 @@
         </ul>
         <ul>
             <li>n</li>
-            <input type="number" id="n" value="10">
+            <input type="number" id="n" value="200">
         </ul>
         <ul>
-            <input type="button"  value="Randomize" onclick="random()" >
+            <input type="button"  value="Randomize">
             
         </ul>
         <div id="randout">
@@ -37,7 +37,19 @@
         </div>
     </main>
     <div class="tests">
-        
+        <h1>Проверка качества псевдослучайных чисел</h1>
+        <div id="testy">
+            
+            <div class = "testtext">Тест проверки  частот и пар (χ<sub>кр</sub><sup>2</sup>=2,09)</div>
+            <textarea class="test1"></textarea>
+            
+            <div class = "testtext">Тест проверки независимости последовательности псевдослучайных чисел</div>
+            <textarea class="test2"></textarea>
+            <ul>
+                <button class="myButton">Вычислить результаты</button>
+            </ul>
+        </div>
+    </main>
     </div>
 </body>
 <script src="./JS/main.js"></script>
