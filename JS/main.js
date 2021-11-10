@@ -119,11 +119,7 @@ function indep_test_1(data)
     let w_data = (1 / N * w1_data - 1 / N * w2_data) / Math.sqrt((1 / N * w3_data - 1 / N * w4_data) * (Math.pow(N, 2) - 1) / 12);
     console.log(w_data);
     let otvet = 35 * (1 - Math.pow(w_data, 2)) / Math.sqrt(N);
-<<<<<<< HEAD
     document.querySelector(".test2").innerHTML = `p(e, i) < pmax \n ${w_data} < ${otvet}`
-=======
-    document.querySelector(".test2").innerHTML = otvet
->>>>>>> sergeev
     return otvet
 }
 
